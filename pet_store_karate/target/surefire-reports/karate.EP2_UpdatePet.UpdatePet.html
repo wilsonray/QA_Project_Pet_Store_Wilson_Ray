@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>karate.EP2_UpdatePet.UpdatePet</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">3</div>
+            
+<div class="bg-danger" id="nav-fail">10</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2022-08-21 06:54:23 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1.1:20]">[1.1:20] Request with invalid id </a>
+</div>
+<div class="nav-item failed">
+<a href="#[1.2:21]">[1.2:21] Request with invalid id </a>
+</div>
+<div class="nav-item failed">
+<a href="#[1.3:22]">[1.3:22] Request with invalid id </a>
+</div>
+<div class="nav-item failed">
+<a href="#[1.4:23]">[1.4:23] Request with invalid id </a>
+</div>
+<div class="nav-item failed">
+<a href="#[1.5:24]">[1.5:24] Request with invalid id </a>
+</div>
+<div class="nav-item failed">
+<a href="#[1.6:25]">[1.6:25] Request with invalid id </a>
+</div>
+<div class="nav-item passed">
+<a href="#[2.1:38]">[2.1:38] Request with invalid category.id </a>
+</div>
+<div class="nav-item failed">
+<a href="#[2.2:39]">[2.2:39] Request with invalid category.id </a>
+</div>
+<div class="nav-item failed">
+<a href="#[2.3:40]">[2.3:40] Request with invalid category.id </a>
+</div>
+<div class="nav-item failed">
+<a href="#[2.4:41]">[2.4:41] Request with invalid category.id </a>
+</div>
+<div class="nav-item failed">
+<a href="#[2.5:42]">[2.5:42] Request with invalid category.id </a>
+</div>
+<div class="nav-item failed">
+<a href="#[2.6:43]">[2.6:43] Request with invalid category.id </a>
+</div>
+<div class="nav-item passed">
+<a href="#[3:45]">[3:45] Check the service PUT method </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">karate/EP2_UpdatePet/UpdatePet.feature</span><span class="feature-description">Service client Put | As QA Automation&#13;
+  I want to update a pet&#13;
+  To validate the status code and response</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1.1:20]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario Outline: [1.1:20]</span><span class="scenario-name">Request with invalid id </span>
+</div>
+<div class="scenario-time passed">ms: 498</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1.1:20]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1.1:20]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">* url url</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="2">
+<div class="step-ref passed">2</div>
+<div class="step-cell passed">* def requestUpdatePet = read('classpath:karate/EP2_UpdatePet/UpdatePetBody.json')</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="3">
+<div class="step-ref passed">3</div>
+<div class="step-cell passed">* set requestUpdatePet.id = 0</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref passed">4</div>
+<div class="step-cell passed">Given path 'pet'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref passed">5</div>
+<div class="step-cell passed">And request requestUpdatePet</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref passed">6</div>
+<div class="step-cell passed">When method put</div>
+</div>
+<div class="time-cell passed">494</div>
+</div>
+<div class="preformatted" data-parent="6">18:54:11.430 request:
+1 &gt; PUT https://petstore.swagger.io/v2/pet
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 172
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: petstore.swagger.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{"id":0,"category":{"id":1,"name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}
+
+18:54:11.920 response time in milliseconds: 489.90
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Sun, 21 Aug 2022 23:54:11 GMT
+1 &lt; Server: Jetty(9.2.9.v20150224)
+1 &lt; Transfer-Encoding: chunked
+{"id":9223372036854775807,"category":{"id":1,"name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref passed">7</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1.2:21]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario Outline: [1.2:21]</span><span class="scenario-name">Request with invalid id </span>
+</div>
+<div class="scenario-time failed">ms: 772</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1.2:21]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1.2:21]bg">
+<div class="step-container" id="8">
+<div class="step-ref bg-step">8</div>
+<div class="step-cell passed">* url url</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="9">
+<div class="step-ref passed">9</div>
+<div class="step-cell passed">* def requestUpdatePet = read('classpath:karate/EP2_UpdatePet/UpdatePetBody.json')</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="10">
+<div class="step-ref passed">10</div>
+<div class="step-cell passed">* set requestUpdatePet.id = "kekw"</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="11">
+<div class="step-ref passed">11</div>
+<div class="step-cell passed">Given path 'pet'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="12">
+<div class="step-ref passed">12</div>
+<div class="step-cell passed">And request requestUpdatePet</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="13">
+<div class="step-ref passed">13</div>
+<div class="step-cell passed">When method put</div>
+</div>
+<div class="time-cell passed">768</div>
+</div>
+<div class="preformatted" data-parent="13">18:54:11.945 request:
+1 &gt; PUT https://petstore.swagger.io/v2/pet
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 177
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: petstore.swagger.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{"id":"kekw","category":{"id":1,"name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}
+
+18:54:12.711 response time in milliseconds: 764.37
+1 &lt; 500
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Sun, 21 Aug 2022 23:54:12 GMT
+1 &lt; Server: Jetty(9.2.9.v20150224)
+1 &lt; Transfer-Encoding: chunked
+{"code":500,"type":"unknown","message":"something bad happened"}</div>
+<div class="step-row">
+<div class="step-container" id="14">
+<div class="step-ref failed">14</div>
+<div class="step-cell failed">Then status 400</div>
+</div>
+<div class="time-cell failed">0</div>
+</div>
+<div class="preformatted" data-parent="14">18:54:12.712 status code was: 500, expected: 400, response time: 764, url: https://petstore.swagger.io/v2/pet, response: {"code":500,"type":"unknown","message":"something bad happened"}
+UpdatePet.feature:16 - status code was: 500, expected: 400, response time: 764, url: https://petstore.swagger.io/v2/pet, response: {"code":500,"type":"unknown","message":"something bad happened"}</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1.3:22]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario Outline: [1.3:22]</span><span class="scenario-name">Request with invalid id </span>
+</div>
+<div class="scenario-time failed">ms: 461</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1.3:22]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1.3:22]bg">
+<div class="step-container" id="15">
+<div class="step-ref bg-step">15</div>
+<div class="step-cell passed">* url url</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="16">
+<div class="step-ref passed">16</div>
+<div class="step-cell passed">* def requestUpdatePet = read('classpath:karate/EP2_UpdatePet/UpdatePetBody.json')</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="17">
+<div class="step-ref passed">17</div>
+<div class="step-cell passed">* set requestUpdatePet.id = ""</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="18">
+<div class="step-ref passed">18</div>
+<div class="step-cell passed">Given path 'pet'</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="19">
+<div class="step-ref passed">19</div>
+<div class="step-cell passed">And request requestUpdatePet</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="20">
+<div class="step-ref passed">20</div>
+<div class="step-cell passed">When method put</div>
+</div>
+<div class="time-cell passed">453</div>
+</div>
+<div class="preformatted" data-parent="20">18:54:12.736 request:
+1 &gt; PUT https://petstore.swagger.io/v2/pet
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 173
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: petstore.swagger.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{"id":"","category":{"id":1,"name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}
+
+18:54:13.187 response time in milliseconds: 448.61
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Sun, 21 Aug 2022 23:54:12 GMT
+1 &lt; Server: Jetty(9.2.9.v20150224)
+1 &lt; Transfer-Encoding: chunked
+{"id":9223372036854775807,"category":{"id":1,"name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}</div>
+<div class="step-row">
+<div class="step-container" id="21">
+<div class="step-ref failed">21</div>
+<div class="step-cell failed">Then status 400</div>
+</div>
+<div class="time-cell failed">1</div>
+</div>
+<div class="preformatted" data-parent="21">18:54:13.189 status code was: 200, expected: 400, response time: 449, url: https://petstore.swagger.io/v2/pet, response: {"photoUrls":["string4","string5","string6"],"name":"Bianquito","id":9223372036854775807,"category":{"name":"Perrete","id":1},"tags":[{"name":"nariz de bolita","id":1}],"status":"available"}
+UpdatePet.feature:16 - status code was: 200, expected: 400, response time: 449, url: https://petstore.swagger.io/v2/pet, response: {"photoUrls":["string4","string5","string6"],"name":"Bianquito","id":9223372036854775807,"category":{"name":"Perrete","id":1},"tags":[{"name":"nariz de bolita","id":1}],"status":"available"}</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1.4:23]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario Outline: [1.4:23]</span><span class="scenario-name">Request with invalid id </span>
+</div>
+<div class="scenario-time failed">ms: 454</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1.4:23]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1.4:23]bg">
+<div class="step-container" id="22">
+<div class="step-ref bg-step">22</div>
+<div class="step-cell passed">* url url</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="23">
+<div class="step-ref passed">23</div>
+<div class="step-cell passed">* def requestUpdatePet = read('classpath:karate/EP2_UpdatePet/UpdatePetBody.json')</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="24">
+<div class="step-ref passed">24</div>
+<div class="step-cell passed">* set requestUpdatePet.id = null</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="25">
+<div class="step-ref passed">25</div>
+<div class="step-cell passed">Given path 'pet'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="26">
+<div class="step-ref passed">26</div>
+<div class="step-cell passed">And request requestUpdatePet</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="27">
+<div class="step-ref passed">27</div>
+<div class="step-cell passed">When method put</div>
+</div>
+<div class="time-cell passed">452</div>
+</div>
+<div class="preformatted" data-parent="27">18:54:13.209 request:
+1 &gt; PUT https://petstore.swagger.io/v2/pet
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 175
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: petstore.swagger.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{"id":null,"category":{"id":1,"name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}
+
+18:54:13.660 response time in milliseconds: 448.67
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Sun, 21 Aug 2022 23:54:13 GMT
+1 &lt; Server: Jetty(9.2.9.v20150224)
+1 &lt; Transfer-Encoding: chunked
+{"id":9223372036854775807,"category":{"id":1,"name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}</div>
+<div class="step-row">
+<div class="step-container" id="28">
+<div class="step-ref failed">28</div>
+<div class="step-cell failed">Then status 400</div>
+</div>
+<div class="time-cell failed">1</div>
+</div>
+<div class="preformatted" data-parent="28">18:54:13.661 status code was: 200, expected: 400, response time: 449, url: https://petstore.swagger.io/v2/pet, response: {"photoUrls":["string4","string5","string6"],"name":"Bianquito","id":9223372036854775807,"category":{"name":"Perrete","id":1},"tags":[{"name":"nariz de bolita","id":1}],"status":"available"}
+UpdatePet.feature:16 - status code was: 200, expected: 400, response time: 449, url: https://petstore.swagger.io/v2/pet, response: {"photoUrls":["string4","string5","string6"],"name":"Bianquito","id":9223372036854775807,"category":{"name":"Perrete","id":1},"tags":[{"name":"nariz de bolita","id":1}],"status":"available"}</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1.5:24]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario Outline: [1.5:24]</span><span class="scenario-name">Request with invalid id </span>
+</div>
+<div class="scenario-time failed">ms: 458</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1.5:24]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1.5:24]bg">
+<div class="step-container" id="29">
+<div class="step-ref bg-step">29</div>
+<div class="step-cell passed">* url url</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="30">
+<div class="step-ref passed">30</div>
+<div class="step-cell passed">* def requestUpdatePet = read('classpath:karate/EP2_UpdatePet/UpdatePetBody.json')</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="31">
+<div class="step-ref passed">31</div>
+<div class="step-cell passed">* set requestUpdatePet.id = ''</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="32">
+<div class="step-ref passed">32</div>
+<div class="step-cell passed">Given path 'pet'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="33">
+<div class="step-ref passed">33</div>
+<div class="step-cell passed">And request requestUpdatePet</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="34">
+<div class="step-ref passed">34</div>
+<div class="step-cell passed">When method put</div>
+</div>
+<div class="time-cell passed">455</div>
+</div>
+<div class="preformatted" data-parent="34">18:54:13.680 request:
+1 &gt; PUT https://petstore.swagger.io/v2/pet
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 173
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: petstore.swagger.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{"id":"","category":{"id":1,"name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}
+
+18:54:14.132 response time in milliseconds: 451.04
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Sun, 21 Aug 2022 23:54:13 GMT
+1 &lt; Server: Jetty(9.2.9.v20150224)
+1 &lt; Transfer-Encoding: chunked
+{"id":9223372036854775807,"category":{"id":1,"name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}</div>
+<div class="step-row">
+<div class="step-container" id="35">
+<div class="step-ref failed">35</div>
+<div class="step-cell failed">Then status 400</div>
+</div>
+<div class="time-cell failed">0</div>
+</div>
+<div class="preformatted" data-parent="35">18:54:14.133 status code was: 200, expected: 400, response time: 451, url: https://petstore.swagger.io/v2/pet, response: {"photoUrls":["string4","string5","string6"],"name":"Bianquito","id":9223372036854775807,"category":{"name":"Perrete","id":1},"tags":[{"name":"nariz de bolita","id":1}],"status":"available"}
+UpdatePet.feature:16 - status code was: 200, expected: 400, response time: 451, url: https://petstore.swagger.io/v2/pet, response: {"photoUrls":["string4","string5","string6"],"name":"Bianquito","id":9223372036854775807,"category":{"name":"Perrete","id":1},"tags":[{"name":"nariz de bolita","id":1}],"status":"available"}</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1.6:25]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario Outline: [1.6:25]</span><span class="scenario-name">Request with invalid id </span>
+</div>
+<div class="scenario-time failed">ms: 462</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1.6:25]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1.6:25]bg">
+<div class="step-container" id="36">
+<div class="step-ref bg-step">36</div>
+<div class="step-cell passed">* url url</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="37">
+<div class="step-ref passed">37</div>
+<div class="step-cell passed">* def requestUpdatePet = read('classpath:karate/EP2_UpdatePet/UpdatePetBody.json')</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="38">
+<div class="step-ref passed">38</div>
+<div class="step-cell passed">* set requestUpdatePet.id = "#$%&amp;"</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="39">
+<div class="step-ref passed">39</div>
+<div class="step-cell passed">Given path 'pet'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="40">
+<div class="step-ref passed">40</div>
+<div class="step-cell passed">And request requestUpdatePet</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="41">
+<div class="step-ref passed">41</div>
+<div class="step-cell passed">When method put</div>
+</div>
+<div class="time-cell passed">457</div>
+</div>
+<div class="preformatted" data-parent="41">18:54:14.153 request:
+1 &gt; PUT https://petstore.swagger.io/v2/pet
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 177
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: petstore.swagger.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{"id":"#$%&amp;","category":{"id":1,"name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}
+
+18:54:14.607 response time in milliseconds: 451.88
+1 &lt; 500
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Sun, 21 Aug 2022 23:54:14 GMT
+1 &lt; Server: Jetty(9.2.9.v20150224)
+1 &lt; Transfer-Encoding: chunked
+{"code":500,"type":"unknown","message":"something bad happened"}</div>
+<div class="step-row">
+<div class="step-container" id="42">
+<div class="step-ref failed">42</div>
+<div class="step-cell failed">Then status 400</div>
+</div>
+<div class="time-cell failed">0</div>
+</div>
+<div class="preformatted" data-parent="42">18:54:14.608 status code was: 500, expected: 400, response time: 452, url: https://petstore.swagger.io/v2/pet, response: {"code":500,"type":"unknown","message":"something bad happened"}
+UpdatePet.feature:16 - status code was: 500, expected: 400, response time: 452, url: https://petstore.swagger.io/v2/pet, response: {"code":500,"type":"unknown","message":"something bad happened"}</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[2.1:38]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario Outline: [2.1:38]</span><span class="scenario-name">Request with invalid category.id </span>
+</div>
+<div class="scenario-time passed">ms: 456</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[2.1:38]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[2.1:38]bg">
+<div class="step-container" id="43">
+<div class="step-ref bg-step">43</div>
+<div class="step-cell passed">* url url</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="44">
+<div class="step-ref passed">44</div>
+<div class="step-cell passed">* def requestUpdatePet = read('classpath:karate/EP2_UpdatePet/UpdatePetBody.json')</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="45">
+<div class="step-ref passed">45</div>
+<div class="step-cell passed">* set requestUpdatePet.category.id = 0</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="46">
+<div class="step-ref passed">46</div>
+<div class="step-cell passed">Given path 'pet'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="47">
+<div class="step-ref passed">47</div>
+<div class="step-cell passed">And request requestUpdatePet</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="48">
+<div class="step-ref passed">48</div>
+<div class="step-cell passed">When method put</div>
+</div>
+<div class="time-cell passed">453</div>
+</div>
+<div class="preformatted" data-parent="48">18:54:14.620 request:
+1 &gt; PUT https://petstore.swagger.io/v2/pet
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 173
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: petstore.swagger.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{"id":15,"category":{"id":0,"name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}
+
+18:54:15.072 response time in milliseconds: 449.76
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Sun, 21 Aug 2022 23:54:14 GMT
+1 &lt; Server: Jetty(9.2.9.v20150224)
+1 &lt; Transfer-Encoding: chunked
+{"id":15,"category":{"id":0,"name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}</div>
+<div class="step-row">
+<div class="step-container" id="49">
+<div class="step-ref passed">49</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[2.2:39]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario Outline: [2.2:39]</span><span class="scenario-name">Request with invalid category.id </span>
+</div>
+<div class="scenario-time failed">ms: 429</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[2.2:39]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[2.2:39]bg">
+<div class="step-container" id="50">
+<div class="step-ref bg-step">50</div>
+<div class="step-cell passed">* url url</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="51">
+<div class="step-ref passed">51</div>
+<div class="step-cell passed">* def requestUpdatePet = read('classpath:karate/EP2_UpdatePet/UpdatePetBody.json')</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="52">
+<div class="step-ref passed">52</div>
+<div class="step-cell passed">* set requestUpdatePet.category.id = "kekw"</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="53">
+<div class="step-ref passed">53</div>
+<div class="step-cell passed">Given path 'pet'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="54">
+<div class="step-ref passed">54</div>
+<div class="step-cell passed">And request requestUpdatePet</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="55">
+<div class="step-ref passed">55</div>
+<div class="step-cell passed">When method put</div>
+</div>
+<div class="time-cell passed">428</div>
+</div>
+<div class="preformatted" data-parent="55">18:54:15.078 request:
+1 &gt; PUT https://petstore.swagger.io/v2/pet
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 178
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: petstore.swagger.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{"id":15,"category":{"id":"kekw","name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}
+
+18:54:15.505 response time in milliseconds: 426.31
+1 &lt; 500
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Sun, 21 Aug 2022 23:54:15 GMT
+1 &lt; Server: Jetty(9.2.9.v20150224)
+1 &lt; Transfer-Encoding: chunked
+{"code":500,"type":"unknown","message":"something bad happened"}</div>
+<div class="step-row">
+<div class="step-container" id="56">
+<div class="step-ref failed">56</div>
+<div class="step-cell failed">Then status 400</div>
+</div>
+<div class="time-cell failed">0</div>
+</div>
+<div class="preformatted" data-parent="56">18:54:15.505 status code was: 500, expected: 400, response time: 426, url: https://petstore.swagger.io/v2/pet, response: {"code":500,"type":"unknown","message":"something bad happened"}
+UpdatePet.feature:34 - status code was: 500, expected: 400, response time: 426, url: https://petstore.swagger.io/v2/pet, response: {"code":500,"type":"unknown","message":"something bad happened"}</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[2.3:40]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario Outline: [2.3:40]</span><span class="scenario-name">Request with invalid category.id </span>
+</div>
+<div class="scenario-time failed">ms: 453</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[2.3:40]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[2.3:40]bg">
+<div class="step-container" id="57">
+<div class="step-ref bg-step">57</div>
+<div class="step-cell passed">* url url</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="58">
+<div class="step-ref passed">58</div>
+<div class="step-cell passed">* def requestUpdatePet = read('classpath:karate/EP2_UpdatePet/UpdatePetBody.json')</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="59">
+<div class="step-ref passed">59</div>
+<div class="step-cell passed">* set requestUpdatePet.category.id = ""</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="60">
+<div class="step-ref passed">60</div>
+<div class="step-cell passed">Given path 'pet'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="61">
+<div class="step-ref passed">61</div>
+<div class="step-cell passed">And request requestUpdatePet</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="62">
+<div class="step-ref passed">62</div>
+<div class="step-cell passed">When method put</div>
+</div>
+<div class="time-cell passed">451</div>
+</div>
+<div class="preformatted" data-parent="62">18:54:15.512 request:
+1 &gt; PUT https://petstore.swagger.io/v2/pet
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 174
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: petstore.swagger.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{"id":15,"category":{"id":"","name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}
+
+18:54:15.962 response time in milliseconds: 448.29
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Sun, 21 Aug 2022 23:54:15 GMT
+1 &lt; Server: Jetty(9.2.9.v20150224)
+1 &lt; Transfer-Encoding: chunked
+{"id":15,"category":{"id":0,"name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}</div>
+<div class="step-row">
+<div class="step-container" id="63">
+<div class="step-ref failed">63</div>
+<div class="step-cell failed">Then status 400</div>
+</div>
+<div class="time-cell failed">0</div>
+</div>
+<div class="preformatted" data-parent="63">18:54:15.963 status code was: 200, expected: 400, response time: 448, url: https://petstore.swagger.io/v2/pet, response: {"photoUrls":["string4","string5","string6"],"name":"Bianquito","id":15,"category":{"name":"Perrete","id":0},"tags":[{"name":"nariz de bolita","id":1}],"status":"available"}
+UpdatePet.feature:34 - status code was: 200, expected: 400, response time: 448, url: https://petstore.swagger.io/v2/pet, response: {"photoUrls":["string4","string5","string6"],"name":"Bianquito","id":15,"category":{"name":"Perrete","id":0},"tags":[{"name":"nariz de bolita","id":1}],"status":"available"}</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[2.4:41]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario Outline: [2.4:41]</span><span class="scenario-name">Request with invalid category.id </span>
+</div>
+<div class="scenario-time failed">ms: 460</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[2.4:41]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[2.4:41]bg">
+<div class="step-container" id="64">
+<div class="step-ref bg-step">64</div>
+<div class="step-cell passed">* url url</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="65">
+<div class="step-ref passed">65</div>
+<div class="step-cell passed">* def requestUpdatePet = read('classpath:karate/EP2_UpdatePet/UpdatePetBody.json')</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="66">
+<div class="step-ref passed">66</div>
+<div class="step-cell passed">* set requestUpdatePet.category.id = null</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="67">
+<div class="step-ref passed">67</div>
+<div class="step-cell passed">Given path 'pet'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="68">
+<div class="step-ref passed">68</div>
+<div class="step-cell passed">And request requestUpdatePet</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="69">
+<div class="step-ref passed">69</div>
+<div class="step-cell passed">When method put</div>
+</div>
+<div class="time-cell passed">456</div>
+</div>
+<div class="preformatted" data-parent="69">18:54:15.983 request:
+1 &gt; PUT https://petstore.swagger.io/v2/pet
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 176
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: petstore.swagger.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{"id":15,"category":{"id":null,"name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}
+
+18:54:16.436 response time in milliseconds: 452.39
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Sun, 21 Aug 2022 23:54:16 GMT
+1 &lt; Server: Jetty(9.2.9.v20150224)
+1 &lt; Transfer-Encoding: chunked
+{"id":15,"category":{"id":0,"name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}</div>
+<div class="step-row">
+<div class="step-container" id="70">
+<div class="step-ref failed">70</div>
+<div class="step-cell failed">Then status 400</div>
+</div>
+<div class="time-cell failed">0</div>
+</div>
+<div class="preformatted" data-parent="70">18:54:16.437 status code was: 200, expected: 400, response time: 452, url: https://petstore.swagger.io/v2/pet, response: {"photoUrls":["string4","string5","string6"],"name":"Bianquito","id":15,"category":{"name":"Perrete","id":0},"tags":[{"name":"nariz de bolita","id":1}],"status":"available"}
+UpdatePet.feature:34 - status code was: 200, expected: 400, response time: 452, url: https://petstore.swagger.io/v2/pet, response: {"photoUrls":["string4","string5","string6"],"name":"Bianquito","id":15,"category":{"name":"Perrete","id":0},"tags":[{"name":"nariz de bolita","id":1}],"status":"available"}</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[2.5:42]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario Outline: [2.5:42]</span><span class="scenario-name">Request with invalid category.id </span>
+</div>
+<div class="scenario-time failed">ms: 449</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[2.5:42]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[2.5:42]bg">
+<div class="step-container" id="71">
+<div class="step-ref bg-step">71</div>
+<div class="step-cell passed">* url url</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="72">
+<div class="step-ref passed">72</div>
+<div class="step-cell passed">* def requestUpdatePet = read('classpath:karate/EP2_UpdatePet/UpdatePetBody.json')</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="73">
+<div class="step-ref passed">73</div>
+<div class="step-cell passed">* set requestUpdatePet.category.id = ''</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="74">
+<div class="step-ref passed">74</div>
+<div class="step-cell passed">Given path 'pet'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="75">
+<div class="step-ref passed">75</div>
+<div class="step-cell passed">And request requestUpdatePet</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="76">
+<div class="step-ref passed">76</div>
+<div class="step-cell passed">When method put</div>
+</div>
+<div class="time-cell passed">447</div>
+</div>
+<div class="preformatted" data-parent="76">18:54:16.447 request:
+1 &gt; PUT https://petstore.swagger.io/v2/pet
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 174
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: petstore.swagger.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{"id":15,"category":{"id":"","name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}
+
+18:54:16.892 response time in milliseconds: 443.57
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Sun, 21 Aug 2022 23:54:16 GMT
+1 &lt; Server: Jetty(9.2.9.v20150224)
+1 &lt; Transfer-Encoding: chunked
+{"id":15,"category":{"id":0,"name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}</div>
+<div class="step-row">
+<div class="step-container" id="77">
+<div class="step-ref failed">77</div>
+<div class="step-cell failed">Then status 400</div>
+</div>
+<div class="time-cell failed">0</div>
+</div>
+<div class="preformatted" data-parent="77">18:54:16.893 status code was: 200, expected: 400, response time: 444, url: https://petstore.swagger.io/v2/pet, response: {"photoUrls":["string4","string5","string6"],"name":"Bianquito","id":15,"category":{"name":"Perrete","id":0},"tags":[{"name":"nariz de bolita","id":1}],"status":"available"}
+UpdatePet.feature:34 - status code was: 200, expected: 400, response time: 444, url: https://petstore.swagger.io/v2/pet, response: {"photoUrls":["string4","string5","string6"],"name":"Bianquito","id":15,"category":{"name":"Perrete","id":0},"tags":[{"name":"nariz de bolita","id":1}],"status":"available"}</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[2.6:43]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario Outline: [2.6:43]</span><span class="scenario-name">Request with invalid category.id </span>
+</div>
+<div class="scenario-time failed">ms: 460</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[2.6:43]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[2.6:43]bg">
+<div class="step-container" id="78">
+<div class="step-ref bg-step">78</div>
+<div class="step-cell passed">* url url</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="79">
+<div class="step-ref passed">79</div>
+<div class="step-cell passed">* def requestUpdatePet = read('classpath:karate/EP2_UpdatePet/UpdatePetBody.json')</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="80">
+<div class="step-ref passed">80</div>
+<div class="step-cell passed">* set requestUpdatePet.category.id = "#$%&amp;"</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="81">
+<div class="step-ref passed">81</div>
+<div class="step-cell passed">Given path 'pet'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="82">
+<div class="step-ref passed">82</div>
+<div class="step-cell passed">And request requestUpdatePet</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="83">
+<div class="step-ref passed">83</div>
+<div class="step-cell passed">When method put</div>
+</div>
+<div class="time-cell passed">456</div>
+</div>
+<div class="preformatted" data-parent="83">18:54:16.912 request:
+1 &gt; PUT https://petstore.swagger.io/v2/pet
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 178
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: petstore.swagger.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{"id":15,"category":{"id":"#$%&amp;","name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}
+
+18:54:17.366 response time in milliseconds: 452.81
+1 &lt; 500
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Sun, 21 Aug 2022 23:54:17 GMT
+1 &lt; Server: Jetty(9.2.9.v20150224)
+1 &lt; Transfer-Encoding: chunked
+{"code":500,"type":"unknown","message":"something bad happened"}</div>
+<div class="step-row">
+<div class="step-container" id="84">
+<div class="step-ref failed">84</div>
+<div class="step-cell failed">Then status 400</div>
+</div>
+<div class="time-cell failed">1</div>
+</div>
+<div class="preformatted" data-parent="84">18:54:17.367 status code was: 500, expected: 400, response time: 453, url: https://petstore.swagger.io/v2/pet, response: {"code":500,"type":"unknown","message":"something bad happened"}
+UpdatePet.feature:34 - status code was: 500, expected: 400, response time: 453, url: https://petstore.swagger.io/v2/pet, response: {"code":500,"type":"unknown","message":"something bad happened"}</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[3:45]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [3:45]</span><span class="scenario-name">Check the service PUT method </span>
+</div>
+<div class="scenario-time passed">ms: 527</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[3:45]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[3:45]bg">
+<div class="step-container" id="85">
+<div class="step-ref bg-step">85</div>
+<div class="step-cell passed">* url url</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="86">
+<div class="step-ref passed">86</div>
+<div class="step-cell passed">* def requestUpdatePet = read('classpath:karate/EP2_UpdatePet/UpdatePetBody.json')</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="87">
+<div class="step-ref passed">87</div>
+<div class="step-cell passed">* def responseUpdatePet = read('classpath:karate/EP2_UpdatePet/responseUpdatePet.json')</div>
+</div>
+<div class="time-cell passed">9</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="88">
+<div class="step-ref passed">88</div>
+<div class="step-cell passed">Given path 'pet'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="89">
+<div class="step-ref passed">89</div>
+<div class="step-cell passed">And request requestUpdatePet</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="90">
+<div class="step-ref passed">90</div>
+<div class="step-cell passed">When method put</div>
+</div>
+<div class="time-cell passed">478</div>
+</div>
+<div class="preformatted" data-parent="90">18:54:17.398 request:
+1 &gt; PUT https://petstore.swagger.io/v2/pet
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 173
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: petstore.swagger.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{"id":15,"category":{"id":1,"name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}
+
+18:54:17.873 response time in milliseconds: 474.21
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Sun, 21 Aug 2022 23:54:17 GMT
+1 &lt; Server: Jetty(9.2.9.v20150224)
+1 &lt; Transfer-Encoding: chunked
+{"id":15,"category":{"id":1,"name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}</div>
+<div class="step-row">
+<div class="step-container" id="91">
+<div class="step-ref passed">91</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="92">
+<div class="step-ref passed">92</div>
+<div class="step-cell passed">And match response == responseUpdatePet</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="93">
+<div class="step-ref passed">93</div>
+<div class="step-cell passed">And assert response.id == requestUpdatePet.id</div>
+</div>
+<div class="time-cell passed">9</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="94">
+<div class="step-ref passed">94</div>
+<div class="step-cell passed">And assert response.category.id == requestUpdatePet.category.id</div>
+</div>
+<div class="time-cell passed">10</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="95">
+<div class="step-ref passed">95</div>
+<div class="step-cell passed">And assert response.category.name == requestUpdatePet.category.name</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="96">
+<div class="step-ref passed">96</div>
+<div class="step-cell passed">And assert response.name == requestUpdatePet.name</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="97">
+<div class="step-ref passed">97</div>
+<div class="step-cell passed">And match response.photoUrls == requestUpdatePet.photoUrls</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="98">
+<div class="step-ref passed">98</div>
+<div class="step-cell passed">And assert response.tags.id == requestUpdatePet.tags.id</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="99">
+<div class="step-ref passed">99</div>
+<div class="step-cell passed">And assert response.tags.name == requestUpdatePet.tags.name</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="100">
+<div class="step-ref passed">100</div>
+<div class="step-cell passed">And assert response.status == requestUpdatePet.status</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>
