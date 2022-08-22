@@ -1,0 +1,770 @@
+18:54:02.137 request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 158
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{"id":15,"category":{"id":1,"name":"Perro"},"name":"Bianco","photoUrls":["string","string2","string3"],"tags":[{"id":1,"name":"string"}],"status":"available"}
+
+18:54:03.554 response time in milliseconds: 1415.70
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sun, 21 Aug 2022 23:54:03 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"id":15,"category":{"id":1,"name":"Perro"},"name":"Bianco","photoUrls":["string","string2","string3"],"tags":[{"id":1,"name":"string"}],"status":"available"}
+
+18:54:03.610 request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 157
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{"id":0,"category":{"id":1,"name":"Perro"},"name":"Bianco","photoUrls":["string","string2","string3"],"tags":[{"id":1,"name":"string"}],"status":"available"}
+
+18:54:04.089 response time in milliseconds: 476.41
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sun, 21 Aug 2022 23:54:03 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"id":9223372036854775807,"category":{"id":1,"name":"Perro"},"name":"Bianco","photoUrls":["string","string2","string3"],"tags":[{"id":1,"name":"string"}],"status":"available"}
+
+18:54:04.091 status code was: 200, expected: 400, response time: 476, url: https://petstore.swagger.io/v2/pet, response: {"photoUrls":["string","string2","string3"],"name":"Bianco","id":9223372036854775807,"category":{"name":"Perro","id":1},"tags":[{"name":"string","id":1}],"status":"available"}
+18:54:04.119 request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 162
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{"id":"kekw","category":{"id":1,"name":"Perro"},"name":"Bianco","photoUrls":["string","string2","string3"],"tags":[{"id":1,"name":"string"}],"status":"available"}
+
+18:54:04.574 response time in milliseconds: 453.84
+1 < 500
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sun, 21 Aug 2022 23:54:04 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":500,"type":"unknown","message":"something bad happened"}
+
+18:54:04.574 status code was: 500, expected: 400, response time: 454, url: https://petstore.swagger.io/v2/pet, response: {"code":500,"type":"unknown","message":"something bad happened"}
+18:54:04.595 request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 158
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{"id":"","category":{"id":1,"name":"Perro"},"name":"Bianco","photoUrls":["string","string2","string3"],"tags":[{"id":1,"name":"string"}],"status":"available"}
+
+18:54:05.918 response time in milliseconds: 1320.78
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sun, 21 Aug 2022 23:54:05 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"id":9223372036854775807,"category":{"id":1,"name":"Perro"},"name":"Bianco","photoUrls":["string","string2","string3"],"tags":[{"id":1,"name":"string"}],"status":"available"}
+
+18:54:05.920 status code was: 200, expected: 400, response time: 1321, url: https://petstore.swagger.io/v2/pet, response: {"photoUrls":["string","string2","string3"],"name":"Bianco","id":9223372036854775807,"category":{"name":"Perro","id":1},"tags":[{"name":"string","id":1}],"status":"available"}
+18:54:05.938 request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 160
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{"id":null,"category":{"id":1,"name":"Perro"},"name":"Bianco","photoUrls":["string","string2","string3"],"tags":[{"id":1,"name":"string"}],"status":"available"}
+
+18:54:06.431 response time in milliseconds: 491.56
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sun, 21 Aug 2022 23:54:06 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"id":9223372036854775807,"category":{"id":1,"name":"Perro"},"name":"Bianco","photoUrls":["string","string2","string3"],"tags":[{"id":1,"name":"string"}],"status":"available"}
+
+18:54:06.432 status code was: 200, expected: 400, response time: 492, url: https://petstore.swagger.io/v2/pet, response: {"photoUrls":["string","string2","string3"],"name":"Bianco","id":9223372036854775807,"category":{"name":"Perro","id":1},"tags":[{"name":"string","id":1}],"status":"available"}
+18:54:06.455 request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 158
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{"id":"","category":{"id":1,"name":"Perro"},"name":"Bianco","photoUrls":["string","string2","string3"],"tags":[{"id":1,"name":"string"}],"status":"available"}
+
+18:54:07.071 response time in milliseconds: 615.03
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sun, 21 Aug 2022 23:54:06 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"id":9223372036854775807,"category":{"id":1,"name":"Perro"},"name":"Bianco","photoUrls":["string","string2","string3"],"tags":[{"id":1,"name":"string"}],"status":"available"}
+
+18:54:07.071 status code was: 200, expected: 400, response time: 615, url: https://petstore.swagger.io/v2/pet, response: {"photoUrls":["string","string2","string3"],"name":"Bianco","id":9223372036854775807,"category":{"name":"Perro","id":1},"tags":[{"name":"string","id":1}],"status":"available"}
+18:54:07.081 request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 162
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{"id":"#$%&","category":{"id":1,"name":"Perro"},"name":"Bianco","photoUrls":["string","string2","string3"],"tags":[{"id":1,"name":"string"}],"status":"available"}
+
+18:54:07.523 response time in milliseconds: 440.11
+1 < 500
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sun, 21 Aug 2022 23:54:07 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":500,"type":"unknown","message":"something bad happened"}
+
+18:54:07.524 status code was: 500, expected: 400, response time: 440, url: https://petstore.swagger.io/v2/pet, response: {"code":500,"type":"unknown","message":"something bad happened"}
+18:54:07.545 request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 158
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{"id":15,"category":{"id":0,"name":"Perro"},"name":"Bianco","photoUrls":["string","string2","string3"],"tags":[{"id":1,"name":"string"}],"status":"available"}
+
+18:54:08.018 response time in milliseconds: 470.83
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sun, 21 Aug 2022 23:54:07 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"id":15,"category":{"id":0,"name":"Perro"},"name":"Bianco","photoUrls":["string","string2","string3"],"tags":[{"id":1,"name":"string"}],"status":"available"}
+
+18:54:08.018 status code was: 200, expected: 400, response time: 471, url: https://petstore.swagger.io/v2/pet, response: {"photoUrls":["string","string2","string3"],"name":"Bianco","id":15,"category":{"name":"Perro","id":0},"tags":[{"name":"string","id":1}],"status":"available"}
+18:54:08.033 request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 163
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{"id":15,"category":{"id":"kekw","name":"Perro"},"name":"Bianco","photoUrls":["string","string2","string3"],"tags":[{"id":1,"name":"string"}],"status":"available"}
+
+18:54:08.856 response time in milliseconds: 821.20
+1 < 500
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sun, 21 Aug 2022 23:54:08 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":500,"type":"unknown","message":"something bad happened"}
+
+18:54:08.857 status code was: 500, expected: 400, response time: 821, url: https://petstore.swagger.io/v2/pet, response: {"code":500,"type":"unknown","message":"something bad happened"}
+18:54:08.878 request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 159
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{"id":15,"category":{"id":"","name":"Perro"},"name":"Bianco","photoUrls":["string","string2","string3"],"tags":[{"id":1,"name":"string"}],"status":"available"}
+
+18:54:09.911 response time in milliseconds: 1030.97
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sun, 21 Aug 2022 23:54:09 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"id":15,"category":{"id":0,"name":"Perro"},"name":"Bianco","photoUrls":["string","string2","string3"],"tags":[{"id":1,"name":"string"}],"status":"available"}
+
+18:54:09.912 status code was: 200, expected: 400, response time: 1031, url: https://petstore.swagger.io/v2/pet, response: {"photoUrls":["string","string2","string3"],"name":"Bianco","id":15,"category":{"name":"Perro","id":0},"tags":[{"name":"string","id":1}],"status":"available"}
+18:54:09.923 request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 161
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{"id":15,"category":{"id":null,"name":"Perro"},"name":"Bianco","photoUrls":["string","string2","string3"],"tags":[{"id":1,"name":"string"}],"status":"available"}
+
+18:54:10.363 response time in milliseconds: 439.23
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sun, 21 Aug 2022 23:54:10 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"id":15,"category":{"id":0,"name":"Perro"},"name":"Bianco","photoUrls":["string","string2","string3"],"tags":[{"id":1,"name":"string"}],"status":"available"}
+
+18:54:10.364 status code was: 200, expected: 400, response time: 439, url: https://petstore.swagger.io/v2/pet, response: {"photoUrls":["string","string2","string3"],"name":"Bianco","id":15,"category":{"name":"Perro","id":0},"tags":[{"name":"string","id":1}],"status":"available"}
+18:54:10.386 request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 159
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{"id":15,"category":{"id":"","name":"Perro"},"name":"Bianco","photoUrls":["string","string2","string3"],"tags":[{"id":1,"name":"string"}],"status":"available"}
+
+18:54:10.823 response time in milliseconds: 435.42
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sun, 21 Aug 2022 23:54:10 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"id":15,"category":{"id":0,"name":"Perro"},"name":"Bianco","photoUrls":["string","string2","string3"],"tags":[{"id":1,"name":"string"}],"status":"available"}
+
+18:54:10.824 status code was: 200, expected: 400, response time: 435, url: https://petstore.swagger.io/v2/pet, response: {"photoUrls":["string","string2","string3"],"name":"Bianco","id":15,"category":{"name":"Perro","id":0},"tags":[{"name":"string","id":1}],"status":"available"}
+18:54:10.844 request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 163
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{"id":15,"category":{"id":"#$%&","name":"Perro"},"name":"Bianco","photoUrls":["string","string2","string3"],"tags":[{"id":1,"name":"string"}],"status":"available"}
+
+18:54:11.307 response time in milliseconds: 460.65
+1 < 500
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sun, 21 Aug 2022 23:54:11 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":500,"type":"unknown","message":"something bad happened"}
+
+18:54:11.308 status code was: 500, expected: 400, response time: 461, url: https://petstore.swagger.io/v2/pet, response: {"code":500,"type":"unknown","message":"something bad happened"}
+18:54:11.430 request:
+1 > PUT https://petstore.swagger.io/v2/pet
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 172
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{"id":0,"category":{"id":1,"name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}
+
+18:54:11.920 response time in milliseconds: 489.90
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sun, 21 Aug 2022 23:54:11 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"id":9223372036854775807,"category":{"id":1,"name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}
+
+18:54:11.945 request:
+1 > PUT https://petstore.swagger.io/v2/pet
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 177
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{"id":"kekw","category":{"id":1,"name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}
+
+18:54:12.711 response time in milliseconds: 764.37
+1 < 500
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sun, 21 Aug 2022 23:54:12 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":500,"type":"unknown","message":"something bad happened"}
+
+18:54:12.712 status code was: 500, expected: 400, response time: 764, url: https://petstore.swagger.io/v2/pet, response: {"code":500,"type":"unknown","message":"something bad happened"}
+18:54:12.736 request:
+1 > PUT https://petstore.swagger.io/v2/pet
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 173
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{"id":"","category":{"id":1,"name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}
+
+18:54:13.187 response time in milliseconds: 448.61
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sun, 21 Aug 2022 23:54:12 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"id":9223372036854775807,"category":{"id":1,"name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}
+
+18:54:13.189 status code was: 200, expected: 400, response time: 449, url: https://petstore.swagger.io/v2/pet, response: {"photoUrls":["string4","string5","string6"],"name":"Bianquito","id":9223372036854775807,"category":{"name":"Perrete","id":1},"tags":[{"name":"nariz de bolita","id":1}],"status":"available"}
+18:54:13.209 request:
+1 > PUT https://petstore.swagger.io/v2/pet
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 175
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{"id":null,"category":{"id":1,"name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}
+
+18:54:13.660 response time in milliseconds: 448.67
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sun, 21 Aug 2022 23:54:13 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"id":9223372036854775807,"category":{"id":1,"name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}
+
+18:54:13.661 status code was: 200, expected: 400, response time: 449, url: https://petstore.swagger.io/v2/pet, response: {"photoUrls":["string4","string5","string6"],"name":"Bianquito","id":9223372036854775807,"category":{"name":"Perrete","id":1},"tags":[{"name":"nariz de bolita","id":1}],"status":"available"}
+18:54:13.680 request:
+1 > PUT https://petstore.swagger.io/v2/pet
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 173
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{"id":"","category":{"id":1,"name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}
+
+18:54:14.132 response time in milliseconds: 451.04
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sun, 21 Aug 2022 23:54:13 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"id":9223372036854775807,"category":{"id":1,"name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}
+
+18:54:14.133 status code was: 200, expected: 400, response time: 451, url: https://petstore.swagger.io/v2/pet, response: {"photoUrls":["string4","string5","string6"],"name":"Bianquito","id":9223372036854775807,"category":{"name":"Perrete","id":1},"tags":[{"name":"nariz de bolita","id":1}],"status":"available"}
+18:54:14.153 request:
+1 > PUT https://petstore.swagger.io/v2/pet
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 177
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{"id":"#$%&","category":{"id":1,"name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}
+
+18:54:14.607 response time in milliseconds: 451.88
+1 < 500
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sun, 21 Aug 2022 23:54:14 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":500,"type":"unknown","message":"something bad happened"}
+
+18:54:14.608 status code was: 500, expected: 400, response time: 452, url: https://petstore.swagger.io/v2/pet, response: {"code":500,"type":"unknown","message":"something bad happened"}
+18:54:14.620 request:
+1 > PUT https://petstore.swagger.io/v2/pet
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 173
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{"id":15,"category":{"id":0,"name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}
+
+18:54:15.072 response time in milliseconds: 449.76
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sun, 21 Aug 2022 23:54:14 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"id":15,"category":{"id":0,"name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}
+
+18:54:15.078 request:
+1 > PUT https://petstore.swagger.io/v2/pet
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 178
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{"id":15,"category":{"id":"kekw","name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}
+
+18:54:15.505 response time in milliseconds: 426.31
+1 < 500
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sun, 21 Aug 2022 23:54:15 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":500,"type":"unknown","message":"something bad happened"}
+
+18:54:15.505 status code was: 500, expected: 400, response time: 426, url: https://petstore.swagger.io/v2/pet, response: {"code":500,"type":"unknown","message":"something bad happened"}
+18:54:15.512 request:
+1 > PUT https://petstore.swagger.io/v2/pet
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 174
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{"id":15,"category":{"id":"","name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}
+
+18:54:15.962 response time in milliseconds: 448.29
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sun, 21 Aug 2022 23:54:15 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"id":15,"category":{"id":0,"name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}
+
+18:54:15.963 status code was: 200, expected: 400, response time: 448, url: https://petstore.swagger.io/v2/pet, response: {"photoUrls":["string4","string5","string6"],"name":"Bianquito","id":15,"category":{"name":"Perrete","id":0},"tags":[{"name":"nariz de bolita","id":1}],"status":"available"}
+18:54:15.983 request:
+1 > PUT https://petstore.swagger.io/v2/pet
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 176
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{"id":15,"category":{"id":null,"name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}
+
+18:54:16.436 response time in milliseconds: 452.39
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sun, 21 Aug 2022 23:54:16 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"id":15,"category":{"id":0,"name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}
+
+18:54:16.437 status code was: 200, expected: 400, response time: 452, url: https://petstore.swagger.io/v2/pet, response: {"photoUrls":["string4","string5","string6"],"name":"Bianquito","id":15,"category":{"name":"Perrete","id":0},"tags":[{"name":"nariz de bolita","id":1}],"status":"available"}
+18:54:16.447 request:
+1 > PUT https://petstore.swagger.io/v2/pet
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 174
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{"id":15,"category":{"id":"","name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}
+
+18:54:16.892 response time in milliseconds: 443.57
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sun, 21 Aug 2022 23:54:16 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"id":15,"category":{"id":0,"name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}
+
+18:54:16.893 status code was: 200, expected: 400, response time: 444, url: https://petstore.swagger.io/v2/pet, response: {"photoUrls":["string4","string5","string6"],"name":"Bianquito","id":15,"category":{"name":"Perrete","id":0},"tags":[{"name":"nariz de bolita","id":1}],"status":"available"}
+18:54:16.912 request:
+1 > PUT https://petstore.swagger.io/v2/pet
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 178
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{"id":15,"category":{"id":"#$%&","name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}
+
+18:54:17.366 response time in milliseconds: 452.81
+1 < 500
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sun, 21 Aug 2022 23:54:17 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":500,"type":"unknown","message":"something bad happened"}
+
+18:54:17.367 status code was: 500, expected: 400, response time: 453, url: https://petstore.swagger.io/v2/pet, response: {"code":500,"type":"unknown","message":"something bad happened"}
+18:54:17.398 request:
+1 > PUT https://petstore.swagger.io/v2/pet
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 173
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{"id":15,"category":{"id":1,"name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}
+
+18:54:17.873 response time in milliseconds: 474.21
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sun, 21 Aug 2022 23:54:17 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"id":15,"category":{"id":1,"name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}
+
+18:54:17.950 request:
+1 > GET https://petstore.swagger.io/v2/pet/15
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+
+18:54:18.485 response time in milliseconds: 533.95
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sun, 21 Aug 2022 23:54:18 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"id":15,"category":{"id":1,"name":"Perrete"},"name":"Bianquito","photoUrls":["string4","string5","string6"],"tags":[{"id":1,"name":"nariz de bolita"}],"status":"available"}
+
+18:54:18.530 request:
+1 > GET https://petstore.swagger.io/v2/pet/0
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+
+18:54:19.055 response time in milliseconds: 524.18
+1 < 404
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sun, 21 Aug 2022 23:54:18 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":1,"type":"error","message":"Pet not found"}
+
+18:54:19.073 request:
+1 > GET https://petstore.swagger.io/v2/pet/kekw
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+
+18:54:19.637 response time in milliseconds: 562.58
+1 < 404
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sun, 21 Aug 2022 23:54:19 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"kekw\""}
+
+18:54:19.638 status code was: 404, expected: 400, response time: 563, url: https://petstore.swagger.io/v2/pet/kekw, response: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"kekw\""}
+18:54:19.655 request:
+1 > GET https://petstore.swagger.io/v2/pet/
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+
+18:54:20.138 response time in milliseconds: 482.42
+1 < 405
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Length: 102
+1 < Content-Type: application/xml
+1 < Date: Sun, 21 Aug 2022 23:54:19 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><apiResponse><type>unknown</type></apiResponse>
+
+18:54:20.161 status code was: 405, expected: 400, response time: 482, url: https://petstore.swagger.io/v2/pet/, response: <apiResponse><type>unknown</type></apiResponse>
+18:54:20.170 request:
+1 > GET https://petstore.swagger.io/v2/pet
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+
+18:54:21.160 response time in milliseconds: 990.06
+1 < 405
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Length: 102
+1 < Content-Type: application/xml
+1 < Date: Sun, 21 Aug 2022 23:54:20 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><apiResponse><type>unknown</type></apiResponse>
+
+18:54:21.165 status code was: 405, expected: 400, response time: 990, url: https://petstore.swagger.io/v2/pet, response: <apiResponse><type>unknown</type></apiResponse>
+18:54:21.192 request:
+1 > GET https://petstore.swagger.io/v2/pet/
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+
+18:54:21.794 response time in milliseconds: 600.91
+1 < 405
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Length: 102
+1 < Content-Type: application/xml
+1 < Date: Sun, 21 Aug 2022 23:54:21 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><apiResponse><type>unknown</type></apiResponse>
+
+18:54:21.798 status code was: 405, expected: 400, response time: 601, url: https://petstore.swagger.io/v2/pet/, response: <apiResponse><type>unknown</type></apiResponse>
+18:54:21.815 request:
+1 > GET https://petstore.swagger.io/v2/pet/%23$%25&
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+
+18:54:22.271 response time in milliseconds: 454.52
+1 < 404
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sun, 21 Aug 2022 23:54:22 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"#$%&\""}
+
+18:54:22.272 status code was: 404, expected: 400, response time: 455, url: https://petstore.swagger.io/v2/pet/%23$%25&, response: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"#$%&\""}
+18:54:22.299 request:
+1 > DELETE https://petstore.swagger.io/v2/pet/15
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+1 > api_key: special-key
+
+18:54:22.767 response time in milliseconds: 466.69
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sun, 21 Aug 2022 23:54:22 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":200,"type":"unknown","message":"15"}
+
+18:54:22.795 request:
+1 > DELETE https://petstore.swagger.io/v2/pet/15
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+1 > api_key: special-key
+
+18:54:23.249 response time in milliseconds: 454.13
+1 < 404
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Length: 0
+1 < Date: Sun, 21 Aug 2022 23:54:22 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+

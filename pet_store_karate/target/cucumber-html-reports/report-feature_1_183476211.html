@@ -1,0 +1,4675 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Feature: karate/EP2_UpdatePet/UpdatePet.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>QAProjectPetStore</td>
+            <td>21 ago 2022, 18:54</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">karate/EP2_UpdatePet/UpdatePet.feature</td>
+          <td      class="passed"    >90</td>
+          <td      class="failed"    >10</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">100</td>
+
+          <td  class="passed"    >3</td>
+          <td  class="failed"    >10</td>
+          <td class="total">13</td>
+
+          <td class="duration" data-value="6338749600">6.338</td>
+          <td class="failed">Failed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+        
+<div class="tags indention">
+  </div>
+
+        
+<div class="brief failed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">karate/EP2_UpdatePet/UpdatePet.feature</span>
+  
+
+  </div>
+
+        <div class="description indention">Service client Put
+As QA Automation
+  I want to update a pet
+  To validate the status code and response</div>
+
+        <div class="elements inner-level">
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.000</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url url</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.497</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Request with invalid id</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-3" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-4">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-4" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def requestUpdatePet = read('classpath:karate/EP2_UpdatePet/UpdatePetBody.json')</span>
+  
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set requestUpdatePet.id = 0</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'pet'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request requestUpdatePet</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method put</span>
+  
+  <span class="lead-duration duration">0.493</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>18:54:11.430 request:
+1 &gt; PUT https://petstore.swagger.io/v2/pet
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 172
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: petstore.swagger.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{&quot;id&quot;:0,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Perrete&quot;},&quot;name&quot;:&quot;Bianquito&quot;,&quot;photoUrls&quot;:[&quot;string4&quot;,&quot;string5&quot;,&quot;string6&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;nariz de bolita&quot;}],&quot;status&quot;:&quot;available&quot;}
+
+18:54:11.920 response time in milliseconds: 489.90
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Sun, 21 Aug 2022 23:54:11 GMT
+1 &lt; Server: Jetty(9.2.9.v20150224)
+1 &lt; Transfer-Encoding: chunked
+{&quot;id&quot;:9223372036854775807,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Perrete&quot;},&quot;name&quot;:&quot;Bianquito&quot;,&quot;photoUrls&quot;:[&quot;string4&quot;,&quot;string5&quot;,&quot;string6&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;nariz de bolita&quot;}],&quot;status&quot;:&quot;available&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.000</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-6">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-6" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-7">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-7" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url url</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.771</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-8">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Request with invalid id</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-8" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-9">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-9" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def requestUpdatePet = read('classpath:karate/EP2_UpdatePet/UpdatePetBody.json')</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set requestUpdatePet.id = &quot;kekw&quot;</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'pet'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request requestUpdatePet</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method put</span>
+  
+  <span class="lead-duration duration">0.767</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>18:54:11.945 request:
+1 &gt; PUT https://petstore.swagger.io/v2/pet
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 177
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: petstore.swagger.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{&quot;id&quot;:&quot;kekw&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Perrete&quot;},&quot;name&quot;:&quot;Bianquito&quot;,&quot;photoUrls&quot;:[&quot;string4&quot;,&quot;string5&quot;,&quot;string6&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;nariz de bolita&quot;}],&quot;status&quot;:&quot;available&quot;}
+
+18:54:12.711 response time in milliseconds: 764.37
+1 &lt; 500
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Sun, 21 Aug 2022 23:54:12 GMT
+1 &lt; Server: Jetty(9.2.9.v20150224)
+1 &lt; Transfer-Encoding: chunked
+{&quot;code&quot;:500,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;something bad happened&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 400</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-11">
+          <a>com.intuit.karate.exception.KarateException:</a>
+      </div>
+      <div id="msg-11" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: UpdatePet.feature:16 - status code was: 500, expected: 400, response time: 764, url: https://petstore.swagger.io/v2/pet, response: {&quot;code&quot;:500,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;something bad happened&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>18:54:12.712 status code was: 500, expected: 400, response time: 764, url: https://petstore.swagger.io/v2/pet, response: {&quot;code&quot;:500,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;something bad happened&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.000</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-14" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url url</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.460</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-15">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Request with invalid id</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-15" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-16">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-16" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def requestUpdatePet = read('classpath:karate/EP2_UpdatePet/UpdatePetBody.json')</span>
+  
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set requestUpdatePet.id = &quot;&quot;</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'pet'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request requestUpdatePet</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method put</span>
+  
+  <span class="lead-duration duration">0.452</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-17">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-17" class="collapse collapsable-details">
+        <pre>18:54:12.736 request:
+1 &gt; PUT https://petstore.swagger.io/v2/pet
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 173
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: petstore.swagger.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{&quot;id&quot;:&quot;&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Perrete&quot;},&quot;name&quot;:&quot;Bianquito&quot;,&quot;photoUrls&quot;:[&quot;string4&quot;,&quot;string5&quot;,&quot;string6&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;nariz de bolita&quot;}],&quot;status&quot;:&quot;available&quot;}
+
+18:54:13.187 response time in milliseconds: 448.61
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Sun, 21 Aug 2022 23:54:12 GMT
+1 &lt; Server: Jetty(9.2.9.v20150224)
+1 &lt; Transfer-Encoding: chunked
+{&quot;id&quot;:9223372036854775807,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Perrete&quot;},&quot;name&quot;:&quot;Bianquito&quot;,&quot;photoUrls&quot;:[&quot;string4&quot;,&quot;string5&quot;,&quot;string6&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;nariz de bolita&quot;}],&quot;status&quot;:&quot;available&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 400</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+        
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-18">
+          <a>com.intuit.karate.exception.KarateException:</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: UpdatePet.feature:16 - status code was: 200, expected: 400, response time: 449, url: https://petstore.swagger.io/v2/pet, response: {&quot;photoUrls&quot;:[&quot;string4&quot;,&quot;string5&quot;,&quot;string6&quot;],&quot;name&quot;:&quot;Bianquito&quot;,&quot;id&quot;:9223372036854775807,&quot;category&quot;:{&quot;name&quot;:&quot;Perrete&quot;,&quot;id&quot;:1},&quot;tags&quot;:[{&quot;name&quot;:&quot;nariz de bolita&quot;,&quot;id&quot;:1}],&quot;status&quot;:&quot;available&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-19">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-19" class="collapse collapsable-details">
+        <pre>18:54:13.189 status code was: 200, expected: 400, response time: 449, url: https://petstore.swagger.io/v2/pet, response: {&quot;photoUrls&quot;:[&quot;string4&quot;,&quot;string5&quot;,&quot;string6&quot;],&quot;name&quot;:&quot;Bianquito&quot;,&quot;id&quot;:9223372036854775807,&quot;category&quot;:{&quot;name&quot;:&quot;Perrete&quot;,&quot;id&quot;:1},&quot;tags&quot;:[{&quot;name&quot;:&quot;nariz de bolita&quot;,&quot;id&quot;:1}],&quot;status&quot;:&quot;available&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.000</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-20">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-20" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-21">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-21" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url url</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.453</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-22">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Request with invalid id</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-22" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-23">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-23" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def requestUpdatePet = read('classpath:karate/EP2_UpdatePet/UpdatePetBody.json')</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set requestUpdatePet.id = null</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'pet'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request requestUpdatePet</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method put</span>
+  
+  <span class="lead-duration duration">0.451</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-24">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-24" class="collapse collapsable-details">
+        <pre>18:54:13.209 request:
+1 &gt; PUT https://petstore.swagger.io/v2/pet
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 175
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: petstore.swagger.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{&quot;id&quot;:null,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Perrete&quot;},&quot;name&quot;:&quot;Bianquito&quot;,&quot;photoUrls&quot;:[&quot;string4&quot;,&quot;string5&quot;,&quot;string6&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;nariz de bolita&quot;}],&quot;status&quot;:&quot;available&quot;}
+
+18:54:13.660 response time in milliseconds: 448.67
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Sun, 21 Aug 2022 23:54:13 GMT
+1 &lt; Server: Jetty(9.2.9.v20150224)
+1 &lt; Transfer-Encoding: chunked
+{&quot;id&quot;:9223372036854775807,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Perrete&quot;},&quot;name&quot;:&quot;Bianquito&quot;,&quot;photoUrls&quot;:[&quot;string4&quot;,&quot;string5&quot;,&quot;string6&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;nariz de bolita&quot;}],&quot;status&quot;:&quot;available&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 400</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-25">
+          <a>com.intuit.karate.exception.KarateException:</a>
+      </div>
+      <div id="msg-25" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: UpdatePet.feature:16 - status code was: 200, expected: 400, response time: 449, url: https://petstore.swagger.io/v2/pet, response: {&quot;photoUrls&quot;:[&quot;string4&quot;,&quot;string5&quot;,&quot;string6&quot;],&quot;name&quot;:&quot;Bianquito&quot;,&quot;id&quot;:9223372036854775807,&quot;category&quot;:{&quot;name&quot;:&quot;Perrete&quot;,&quot;id&quot;:1},&quot;tags&quot;:[{&quot;name&quot;:&quot;nariz de bolita&quot;,&quot;id&quot;:1}],&quot;status&quot;:&quot;available&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-26">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-26" class="collapse collapsable-details">
+        <pre>18:54:13.661 status code was: 200, expected: 400, response time: 449, url: https://petstore.swagger.io/v2/pet, response: {&quot;photoUrls&quot;:[&quot;string4&quot;,&quot;string5&quot;,&quot;string6&quot;],&quot;name&quot;:&quot;Bianquito&quot;,&quot;id&quot;:9223372036854775807,&quot;category&quot;:{&quot;name&quot;:&quot;Perrete&quot;,&quot;id&quot;:1},&quot;tags&quot;:[{&quot;name&quot;:&quot;nariz de bolita&quot;,&quot;id&quot;:1}],&quot;status&quot;:&quot;available&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.000</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-27">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-27" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-28">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-28" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url url</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.458</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-29">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Request with invalid id</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-29" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-30">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-30" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def requestUpdatePet = read('classpath:karate/EP2_UpdatePet/UpdatePetBody.json')</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set requestUpdatePet.id = ''</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'pet'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request requestUpdatePet</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method put</span>
+  
+  <span class="lead-duration duration">0.454</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-31">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-31" class="collapse collapsable-details">
+        <pre>18:54:13.680 request:
+1 &gt; PUT https://petstore.swagger.io/v2/pet
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 173
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: petstore.swagger.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{&quot;id&quot;:&quot;&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Perrete&quot;},&quot;name&quot;:&quot;Bianquito&quot;,&quot;photoUrls&quot;:[&quot;string4&quot;,&quot;string5&quot;,&quot;string6&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;nariz de bolita&quot;}],&quot;status&quot;:&quot;available&quot;}
+
+18:54:14.132 response time in milliseconds: 451.04
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Sun, 21 Aug 2022 23:54:13 GMT
+1 &lt; Server: Jetty(9.2.9.v20150224)
+1 &lt; Transfer-Encoding: chunked
+{&quot;id&quot;:9223372036854775807,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Perrete&quot;},&quot;name&quot;:&quot;Bianquito&quot;,&quot;photoUrls&quot;:[&quot;string4&quot;,&quot;string5&quot;,&quot;string6&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;nariz de bolita&quot;}],&quot;status&quot;:&quot;available&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 400</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-32">
+          <a>com.intuit.karate.exception.KarateException:</a>
+      </div>
+      <div id="msg-32" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: UpdatePet.feature:16 - status code was: 200, expected: 400, response time: 451, url: https://petstore.swagger.io/v2/pet, response: {&quot;photoUrls&quot;:[&quot;string4&quot;,&quot;string5&quot;,&quot;string6&quot;],&quot;name&quot;:&quot;Bianquito&quot;,&quot;id&quot;:9223372036854775807,&quot;category&quot;:{&quot;name&quot;:&quot;Perrete&quot;,&quot;id&quot;:1},&quot;tags&quot;:[{&quot;name&quot;:&quot;nariz de bolita&quot;,&quot;id&quot;:1}],&quot;status&quot;:&quot;available&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-33">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-33" class="collapse collapsable-details">
+        <pre>18:54:14.133 status code was: 200, expected: 400, response time: 451, url: https://petstore.swagger.io/v2/pet, response: {&quot;photoUrls&quot;:[&quot;string4&quot;,&quot;string5&quot;,&quot;string6&quot;],&quot;name&quot;:&quot;Bianquito&quot;,&quot;id&quot;:9223372036854775807,&quot;category&quot;:{&quot;name&quot;:&quot;Perrete&quot;,&quot;id&quot;:1},&quot;tags&quot;:[{&quot;name&quot;:&quot;nariz de bolita&quot;,&quot;id&quot;:1}],&quot;status&quot;:&quot;available&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.000</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-34">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-34" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-35">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-35" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url url</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.461</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-36">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Request with invalid id</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-36" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-37">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-37" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def requestUpdatePet = read('classpath:karate/EP2_UpdatePet/UpdatePetBody.json')</span>
+  
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set requestUpdatePet.id = &quot;#$%&amp;&quot;</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'pet'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request requestUpdatePet</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method put</span>
+  
+  <span class="lead-duration duration">0.456</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-38">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-38" class="collapse collapsable-details">
+        <pre>18:54:14.153 request:
+1 &gt; PUT https://petstore.swagger.io/v2/pet
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 177
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: petstore.swagger.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{&quot;id&quot;:&quot;#$%&amp;&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Perrete&quot;},&quot;name&quot;:&quot;Bianquito&quot;,&quot;photoUrls&quot;:[&quot;string4&quot;,&quot;string5&quot;,&quot;string6&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;nariz de bolita&quot;}],&quot;status&quot;:&quot;available&quot;}
+
+18:54:14.607 response time in milliseconds: 451.88
+1 &lt; 500
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Sun, 21 Aug 2022 23:54:14 GMT
+1 &lt; Server: Jetty(9.2.9.v20150224)
+1 &lt; Transfer-Encoding: chunked
+{&quot;code&quot;:500,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;something bad happened&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 400</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-39">
+          <a>com.intuit.karate.exception.KarateException:</a>
+      </div>
+      <div id="msg-39" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: UpdatePet.feature:16 - status code was: 500, expected: 400, response time: 452, url: https://petstore.swagger.io/v2/pet, response: {&quot;code&quot;:500,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;something bad happened&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-40">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-40" class="collapse collapsable-details">
+        <pre>18:54:14.608 status code was: 500, expected: 400, response time: 452, url: https://petstore.swagger.io/v2/pet, response: {&quot;code&quot;:500,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;something bad happened&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.000</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-41">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-41" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-42">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-42" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url url</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.455</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-43">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Request with invalid category.id</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-43" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-44">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-44" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def requestUpdatePet = read('classpath:karate/EP2_UpdatePet/UpdatePetBody.json')</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set requestUpdatePet.category.id = 0</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'pet'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request requestUpdatePet</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method put</span>
+  
+  <span class="lead-duration duration">0.453</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-45">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-45" class="collapse collapsable-details">
+        <pre>18:54:14.620 request:
+1 &gt; PUT https://petstore.swagger.io/v2/pet
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 173
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: petstore.swagger.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{&quot;id&quot;:15,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;Perrete&quot;},&quot;name&quot;:&quot;Bianquito&quot;,&quot;photoUrls&quot;:[&quot;string4&quot;,&quot;string5&quot;,&quot;string6&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;nariz de bolita&quot;}],&quot;status&quot;:&quot;available&quot;}
+
+18:54:15.072 response time in milliseconds: 449.76
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Sun, 21 Aug 2022 23:54:14 GMT
+1 &lt; Server: Jetty(9.2.9.v20150224)
+1 &lt; Transfer-Encoding: chunked
+{&quot;id&quot;:15,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;Perrete&quot;},&quot;name&quot;:&quot;Bianquito&quot;,&quot;photoUrls&quot;:[&quot;string4&quot;,&quot;string5&quot;,&quot;string6&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;nariz de bolita&quot;}],&quot;status&quot;:&quot;available&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.000</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-46">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-46" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-47">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-47" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url url</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.429</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-48">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Request with invalid category.id</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-48" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-49">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-49" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def requestUpdatePet = read('classpath:karate/EP2_UpdatePet/UpdatePetBody.json')</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set requestUpdatePet.category.id = &quot;kekw&quot;</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'pet'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request requestUpdatePet</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method put</span>
+  
+  <span class="lead-duration duration">0.427</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-50">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-50" class="collapse collapsable-details">
+        <pre>18:54:15.078 request:
+1 &gt; PUT https://petstore.swagger.io/v2/pet
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 178
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: petstore.swagger.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{&quot;id&quot;:15,&quot;category&quot;:{&quot;id&quot;:&quot;kekw&quot;,&quot;name&quot;:&quot;Perrete&quot;},&quot;name&quot;:&quot;Bianquito&quot;,&quot;photoUrls&quot;:[&quot;string4&quot;,&quot;string5&quot;,&quot;string6&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;nariz de bolita&quot;}],&quot;status&quot;:&quot;available&quot;}
+
+18:54:15.505 response time in milliseconds: 426.31
+1 &lt; 500
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Sun, 21 Aug 2022 23:54:15 GMT
+1 &lt; Server: Jetty(9.2.9.v20150224)
+1 &lt; Transfer-Encoding: chunked
+{&quot;code&quot;:500,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;something bad happened&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 400</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-51">
+          <a>com.intuit.karate.exception.KarateException:</a>
+      </div>
+      <div id="msg-51" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: UpdatePet.feature:34 - status code was: 500, expected: 400, response time: 426, url: https://petstore.swagger.io/v2/pet, response: {&quot;code&quot;:500,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;something bad happened&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-52">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-52" class="collapse collapsable-details">
+        <pre>18:54:15.505 status code was: 500, expected: 400, response time: 426, url: https://petstore.swagger.io/v2/pet, response: {&quot;code&quot;:500,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;something bad happened&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.000</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-53">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-53" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-54">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-54" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url url</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.452</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-55">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Request with invalid category.id</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-55" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-56">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-56" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def requestUpdatePet = read('classpath:karate/EP2_UpdatePet/UpdatePetBody.json')</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set requestUpdatePet.category.id = &quot;&quot;</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'pet'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request requestUpdatePet</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method put</span>
+  
+  <span class="lead-duration duration">0.451</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-57">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-57" class="collapse collapsable-details">
+        <pre>18:54:15.512 request:
+1 &gt; PUT https://petstore.swagger.io/v2/pet
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 174
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: petstore.swagger.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{&quot;id&quot;:15,&quot;category&quot;:{&quot;id&quot;:&quot;&quot;,&quot;name&quot;:&quot;Perrete&quot;},&quot;name&quot;:&quot;Bianquito&quot;,&quot;photoUrls&quot;:[&quot;string4&quot;,&quot;string5&quot;,&quot;string6&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;nariz de bolita&quot;}],&quot;status&quot;:&quot;available&quot;}
+
+18:54:15.962 response time in milliseconds: 448.29
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Sun, 21 Aug 2022 23:54:15 GMT
+1 &lt; Server: Jetty(9.2.9.v20150224)
+1 &lt; Transfer-Encoding: chunked
+{&quot;id&quot;:15,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;Perrete&quot;},&quot;name&quot;:&quot;Bianquito&quot;,&quot;photoUrls&quot;:[&quot;string4&quot;,&quot;string5&quot;,&quot;string6&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;nariz de bolita&quot;}],&quot;status&quot;:&quot;available&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 400</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-58">
+          <a>com.intuit.karate.exception.KarateException:</a>
+      </div>
+      <div id="msg-58" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: UpdatePet.feature:34 - status code was: 200, expected: 400, response time: 448, url: https://petstore.swagger.io/v2/pet, response: {&quot;photoUrls&quot;:[&quot;string4&quot;,&quot;string5&quot;,&quot;string6&quot;],&quot;name&quot;:&quot;Bianquito&quot;,&quot;id&quot;:15,&quot;category&quot;:{&quot;name&quot;:&quot;Perrete&quot;,&quot;id&quot;:0},&quot;tags&quot;:[{&quot;name&quot;:&quot;nariz de bolita&quot;,&quot;id&quot;:1}],&quot;status&quot;:&quot;available&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-59">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-59" class="collapse collapsable-details">
+        <pre>18:54:15.963 status code was: 200, expected: 400, response time: 448, url: https://petstore.swagger.io/v2/pet, response: {&quot;photoUrls&quot;:[&quot;string4&quot;,&quot;string5&quot;,&quot;string6&quot;],&quot;name&quot;:&quot;Bianquito&quot;,&quot;id&quot;:15,&quot;category&quot;:{&quot;name&quot;:&quot;Perrete&quot;,&quot;id&quot;:0},&quot;tags&quot;:[{&quot;name&quot;:&quot;nariz de bolita&quot;,&quot;id&quot;:1}],&quot;status&quot;:&quot;available&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.000</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-60">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-60" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-61">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-61" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url url</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.459</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-62">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Request with invalid category.id</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-62" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-63">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-63" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def requestUpdatePet = read('classpath:karate/EP2_UpdatePet/UpdatePetBody.json')</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set requestUpdatePet.category.id = null</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'pet'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request requestUpdatePet</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method put</span>
+  
+  <span class="lead-duration duration">0.455</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-64">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-64" class="collapse collapsable-details">
+        <pre>18:54:15.983 request:
+1 &gt; PUT https://petstore.swagger.io/v2/pet
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 176
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: petstore.swagger.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{&quot;id&quot;:15,&quot;category&quot;:{&quot;id&quot;:null,&quot;name&quot;:&quot;Perrete&quot;},&quot;name&quot;:&quot;Bianquito&quot;,&quot;photoUrls&quot;:[&quot;string4&quot;,&quot;string5&quot;,&quot;string6&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;nariz de bolita&quot;}],&quot;status&quot;:&quot;available&quot;}
+
+18:54:16.436 response time in milliseconds: 452.39
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Sun, 21 Aug 2022 23:54:16 GMT
+1 &lt; Server: Jetty(9.2.9.v20150224)
+1 &lt; Transfer-Encoding: chunked
+{&quot;id&quot;:15,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;Perrete&quot;},&quot;name&quot;:&quot;Bianquito&quot;,&quot;photoUrls&quot;:[&quot;string4&quot;,&quot;string5&quot;,&quot;string6&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;nariz de bolita&quot;}],&quot;status&quot;:&quot;available&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 400</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-65">
+          <a>com.intuit.karate.exception.KarateException:</a>
+      </div>
+      <div id="msg-65" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: UpdatePet.feature:34 - status code was: 200, expected: 400, response time: 452, url: https://petstore.swagger.io/v2/pet, response: {&quot;photoUrls&quot;:[&quot;string4&quot;,&quot;string5&quot;,&quot;string6&quot;],&quot;name&quot;:&quot;Bianquito&quot;,&quot;id&quot;:15,&quot;category&quot;:{&quot;name&quot;:&quot;Perrete&quot;,&quot;id&quot;:0},&quot;tags&quot;:[{&quot;name&quot;:&quot;nariz de bolita&quot;,&quot;id&quot;:1}],&quot;status&quot;:&quot;available&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-66">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-66" class="collapse collapsable-details">
+        <pre>18:54:16.437 status code was: 200, expected: 400, response time: 452, url: https://petstore.swagger.io/v2/pet, response: {&quot;photoUrls&quot;:[&quot;string4&quot;,&quot;string5&quot;,&quot;string6&quot;],&quot;name&quot;:&quot;Bianquito&quot;,&quot;id&quot;:15,&quot;category&quot;:{&quot;name&quot;:&quot;Perrete&quot;,&quot;id&quot;:0},&quot;tags&quot;:[{&quot;name&quot;:&quot;nariz de bolita&quot;,&quot;id&quot;:1}],&quot;status&quot;:&quot;available&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.000</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-67">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-67" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-68">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-68" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url url</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.448</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-69">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Request with invalid category.id</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-69" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-70">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-70" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def requestUpdatePet = read('classpath:karate/EP2_UpdatePet/UpdatePetBody.json')</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set requestUpdatePet.category.id = ''</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'pet'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request requestUpdatePet</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method put</span>
+  
+  <span class="lead-duration duration">0.446</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-71">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-71" class="collapse collapsable-details">
+        <pre>18:54:16.447 request:
+1 &gt; PUT https://petstore.swagger.io/v2/pet
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 174
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: petstore.swagger.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{&quot;id&quot;:15,&quot;category&quot;:{&quot;id&quot;:&quot;&quot;,&quot;name&quot;:&quot;Perrete&quot;},&quot;name&quot;:&quot;Bianquito&quot;,&quot;photoUrls&quot;:[&quot;string4&quot;,&quot;string5&quot;,&quot;string6&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;nariz de bolita&quot;}],&quot;status&quot;:&quot;available&quot;}
+
+18:54:16.892 response time in milliseconds: 443.57
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Sun, 21 Aug 2022 23:54:16 GMT
+1 &lt; Server: Jetty(9.2.9.v20150224)
+1 &lt; Transfer-Encoding: chunked
+{&quot;id&quot;:15,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;Perrete&quot;},&quot;name&quot;:&quot;Bianquito&quot;,&quot;photoUrls&quot;:[&quot;string4&quot;,&quot;string5&quot;,&quot;string6&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;nariz de bolita&quot;}],&quot;status&quot;:&quot;available&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 400</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-72">
+          <a>com.intuit.karate.exception.KarateException:</a>
+      </div>
+      <div id="msg-72" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: UpdatePet.feature:34 - status code was: 200, expected: 400, response time: 444, url: https://petstore.swagger.io/v2/pet, response: {&quot;photoUrls&quot;:[&quot;string4&quot;,&quot;string5&quot;,&quot;string6&quot;],&quot;name&quot;:&quot;Bianquito&quot;,&quot;id&quot;:15,&quot;category&quot;:{&quot;name&quot;:&quot;Perrete&quot;,&quot;id&quot;:0},&quot;tags&quot;:[{&quot;name&quot;:&quot;nariz de bolita&quot;,&quot;id&quot;:1}],&quot;status&quot;:&quot;available&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-73">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-73" class="collapse collapsable-details">
+        <pre>18:54:16.893 status code was: 200, expected: 400, response time: 444, url: https://petstore.swagger.io/v2/pet, response: {&quot;photoUrls&quot;:[&quot;string4&quot;,&quot;string5&quot;,&quot;string6&quot;],&quot;name&quot;:&quot;Bianquito&quot;,&quot;id&quot;:15,&quot;category&quot;:{&quot;name&quot;:&quot;Perrete&quot;,&quot;id&quot;:0},&quot;tags&quot;:[{&quot;name&quot;:&quot;nariz de bolita&quot;,&quot;id&quot;:1}],&quot;status&quot;:&quot;available&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.000</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-74">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-74" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-75">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-75" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url url</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.460</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-76">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Request with invalid category.id</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-76" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-77">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-77" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def requestUpdatePet = read('classpath:karate/EP2_UpdatePet/UpdatePetBody.json')</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set requestUpdatePet.category.id = &quot;#$%&amp;&quot;</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'pet'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request requestUpdatePet</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method put</span>
+  
+  <span class="lead-duration duration">0.456</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-78">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-78" class="collapse collapsable-details">
+        <pre>18:54:16.912 request:
+1 &gt; PUT https://petstore.swagger.io/v2/pet
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 178
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: petstore.swagger.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{&quot;id&quot;:15,&quot;category&quot;:{&quot;id&quot;:&quot;#$%&amp;&quot;,&quot;name&quot;:&quot;Perrete&quot;},&quot;name&quot;:&quot;Bianquito&quot;,&quot;photoUrls&quot;:[&quot;string4&quot;,&quot;string5&quot;,&quot;string6&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;nariz de bolita&quot;}],&quot;status&quot;:&quot;available&quot;}
+
+18:54:17.366 response time in milliseconds: 452.81
+1 &lt; 500
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Sun, 21 Aug 2022 23:54:17 GMT
+1 &lt; Server: Jetty(9.2.9.v20150224)
+1 &lt; Transfer-Encoding: chunked
+{&quot;code&quot;:500,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;something bad happened&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 400</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-79">
+          <a>com.intuit.karate.exception.KarateException:</a>
+      </div>
+      <div id="msg-79" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: UpdatePet.feature:34 - status code was: 500, expected: 400, response time: 453, url: https://petstore.swagger.io/v2/pet, response: {&quot;code&quot;:500,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;something bad happened&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-80">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-80" class="collapse collapsable-details">
+        <pre>18:54:17.367 status code was: 500, expected: 400, response time: 453, url: https://petstore.swagger.io/v2/pet, response: {&quot;code&quot;:500,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;something bad happened&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.000</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-81">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-81" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-82">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-82" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url url</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.527</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-83">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Check the service PUT method</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-83" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-84">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-84" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def requestUpdatePet = read('classpath:karate/EP2_UpdatePet/UpdatePetBody.json')</span>
+  
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseUpdatePet = read('classpath:karate/EP2_UpdatePet/responseUpdatePet.json')</span>
+  
+  <span class="lead-duration duration">0.009</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'pet'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request requestUpdatePet</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method put</span>
+  
+  <span class="lead-duration duration">0.477</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-85">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-85" class="collapse collapsable-details">
+        <pre>18:54:17.398 request:
+1 &gt; PUT https://petstore.swagger.io/v2/pet
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 173
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: petstore.swagger.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_345)
+{&quot;id&quot;:15,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Perrete&quot;},&quot;name&quot;:&quot;Bianquito&quot;,&quot;photoUrls&quot;:[&quot;string4&quot;,&quot;string5&quot;,&quot;string6&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;nariz de bolita&quot;}],&quot;status&quot;:&quot;available&quot;}
+
+18:54:17.873 response time in milliseconds: 474.21
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Sun, 21 Aug 2022 23:54:17 GMT
+1 &lt; Server: Jetty(9.2.9.v20150224)
+1 &lt; Transfer-Encoding: chunked
+{&quot;id&quot;:15,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Perrete&quot;},&quot;name&quot;:&quot;Bianquito&quot;,&quot;photoUrls&quot;:[&quot;string4&quot;,&quot;string5&quot;,&quot;string6&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;nariz de bolita&quot;}],&quot;status&quot;:&quot;available&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == responseUpdatePet</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">assert response.id == requestUpdatePet.id</span>
+  
+  <span class="lead-duration duration">0.009</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">assert response.category.id == requestUpdatePet.category.id</span>
+  
+  <span class="lead-duration duration">0.010</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">assert response.category.name == requestUpdatePet.category.name</span>
+  
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">assert response.name == requestUpdatePet.name</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.photoUrls == requestUpdatePet.photoUrls</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">assert response.tags.id == requestUpdatePet.tags.id</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">assert response.tags.name == requestUpdatePet.tags.name</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">assert response.status == requestUpdatePet.status</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "id": 15,
+  "category": {
+    "id": 1,
+    "name": "Perrete"
+  },
+  "name": "Bianquito",
+  "photoUrls": [
+    "string4", "string5", "string6"
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "name": "nariz de bolita"
+    }
+  ],
+  "status": "available"
+}
