@@ -1,0 +1,29 @@
+<testsuite failures="0" name="karate/EP4_DeletePet/DeletePet.feature" skipped="0" tests="2" time="0.945065">
+  <testcase classname="karate.EP4_DeletePet.DeletePet" name="Check the service DELETE method" time="0.489325">
+    <system-out>* url url ................................................................. passed
+* def responseDeletePet = read('classpath:karate/EP4_DeletePet/SuccessfulDeleteResponse.json') . passed
+Given path 'pet', '15' .................................................... passed
+And header api_key = "special-key" ........................................ passed
+When method delete ........................................................ passed
+Then status 200 ........................................................... passed
+And match response == responseDeletePet ................................... passed
+And assert response.type == responseDeletePet.type ........................ passed
+And assert response.message == '15' ....................................... passed</system-out>
+  </testcase>
+  <testcase classname="karate.EP4_DeletePet.DeletePet" name="Delete request with non-existent pet" time="0.45574">
+    <system-out>* url url ................................................................. passed
+* def responseDeletePet = read('classpath:karate/EP4_DeletePet/SuccessfulDeleteResponse.json') . passed
+Given path 'pet', '15' .................................................... passed
+And header api_key = "special-key" ........................................ passed
+When method delete ........................................................ passed
+Then status 200 ........................................................... passed
+And match response == responseDeletePet ................................... passed
+And assert response.type == responseDeletePet.type ........................ passed
+And assert response.message == '15' ....................................... passed
+* url url ................................................................. passed
+Given path 'pet', '15' .................................................... passed
+And header api_key = "special-key" ........................................ passed
+When method delete ........................................................ passed
+Then status 404 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>
