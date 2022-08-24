@@ -1,3 +1,4 @@
+@F3
 Feature: Service client Get
   As QA Automation
   I want to consult a pet
@@ -33,8 +34,8 @@ Feature: Service client Get
     Examples:
       |id    |codestatus|
       |0     |404       |
-      |"kekw"|400       |
-      |""    |400       |
-      |null  |400       |
-      |''    |400       |
-      |"#$%&"|400       |
+      |"kekw"|404       |
+      |""    |405       |
+      |null  |405       |
+      |''    |405       |
+      |"#$%&"|404       |

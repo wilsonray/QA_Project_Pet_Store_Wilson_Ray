@@ -1,3 +1,4 @@
+@F4
 Feature: Service client Delete
   As QA Automation
   I want to delete a pet

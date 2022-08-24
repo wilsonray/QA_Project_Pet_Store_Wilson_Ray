@@ -1,3 +1,4 @@
+@F1
 Feature: Service client Post
   As QA Automation
   I want to create a pet
@@ -35,12 +36,12 @@ Feature: Service client Post
 
     Examples:
       |id    |codestatus|
-      |0     |400       |
-      |"kekw"|400       |
-      |""    |400       |
-      |null  |400       |
-      |''    |400       |
-      |"#$%&"|400       |
+      |0     |200       |
+      |"kekw"|500       |
+      |""    |200       |
+      |null  |200       |
+      |''    |200       |
+      |"#$%&"|500       |
 
   Scenario Outline: Request with invalid category.id
     * def requestAddPet = read('classpath:karate/EP1_AddPet/AddPetBody.json')
@@ -53,9 +54,9 @@ Feature: Service client Post
 
     Examples:
       |categid|codestatus|
-      |0      |400       |
-      |"kekw" |400       |
-      |""     |400       |
-      |null   |400       |
-      |''     |400       |
-      |"#$%&" |400       |
+      |0      |200       |
+      |"kekw" |500       |
+      |""     |200       |
+      |null   |200       |
+      |''     |200       |
+      |"#$%&" |500       |

@@ -1,3 +1,4 @@
+@F2
 Feature: Service client Put
   As QA Automation
   I want to update a pet
@@ -18,11 +19,11 @@ Feature: Service client Put
     Examples:
       |id    |codestatus|
       |0     |200       |
-      |"kekw"|400       |
-      |""    |400       |
-      |null  |400       |
-      |''    |400       |
-      |"#$%&"|400       |
+      |"kekw"|500       |
+      |""    |200       |
+      |null  |200       |
+      |''    |200       |
+      |"#$%&"|500       |
 
   Scenario Outline: Request with invalid category.id
     * def requestUpdatePet = read('classpath:karate/EP2_UpdatePet/UpdatePetBody.json')
@@ -36,11 +37,11 @@ Feature: Service client Put
     Examples:
       |categid|codestatus|
       |0      |200       |
-      |"kekw" |400       |
-      |""     |400       |
-      |null   |400       |
-      |''     |400       |
-      |"#$%&" |400       |
+      |"kekw" |500       |
+      |""     |200       |
+      |null   |200       |
+      |''     |200       |
+      |"#$%&" |500       |
 
   Scenario: Check the service PUT method
     * def requestUpdatePet = read('classpath:karate/EP2_UpdatePet/UpdatePetBody.json')

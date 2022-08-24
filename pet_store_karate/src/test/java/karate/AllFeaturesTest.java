@@ -1,5 +1,6 @@
 package karate;
 
+import com.intuit.karate.KarateOptions;
 import com.intuit.karate.Results;
 import com.intuit.karate.Runner;
 import net.masterthought.cucumber.Configuration;
@@ -12,6 +13,8 @@ import java.io.File;
 import java.util.ArrayList;
 import  java.util.Collection;
 import java.util.List;
+
+@KarateOptions(tags = {"@F1", "@F2", "@F3", "~@F4"} )
 
 public class AllFeaturesTest {
     public static void generateReport(String karateOutputPath) {
