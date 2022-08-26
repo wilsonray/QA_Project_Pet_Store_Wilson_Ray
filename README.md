@@ -7,7 +7,6 @@ This is the project about the validation of the **petstore.swagger.io/v2** API w
 **Folders** <br />
 * **Documentation** <br />
 -Test Plan <br />
--Test Charter <br />
 * **Design and Execution** <br />
 -Test Cases <br />
 -Bugs Report <br />
