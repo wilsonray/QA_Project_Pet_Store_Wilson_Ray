@@ -16,7 +16,7 @@ import java.util.List;
 
 @KarateOptions(tags = {"@F1", "@F2", "@F3", "~@F4"} )
 
-public class AllFeaturesTest {
+public class IntegrationTest {
     public static void generateReport(String karateOutputPath) {
         Collection<File> jsonFiles = FileUtils.listFiles(new File(karateOutputPath), new String[]{"json"}, true);
         List<String> jsonPaths = new ArrayList<>(jsonFiles.size());
