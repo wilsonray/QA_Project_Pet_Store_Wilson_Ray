@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import  java.util.Collection;
 import java.util.List;
 
-@KarateOptions(tags = {"@F1", "@F2", "@F3", "~@F4"} )
+@KarateOptions(tags = {"@F1", "@F2", "@F3", "@F4", "@F5", "@F6"} )
 
 public class IntegrationTest {
     public static void generateReport(String karateOutputPath) {

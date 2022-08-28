@@ -1,3 +1,4 @@
+@F5
 Feature: Service client Post
   As QA Automation
   I want to create a user
@@ -9,7 +10,7 @@ Feature: Service client Post
   Scenario: Check the service POST method
     * def fakePerson =  read('classpath:karate/Helpers/randomizer.js')
     #* def requestCreateUser = read('classpath:karate/User/EP1_CreateUser/CreateUserBody.json')
-    * def requestCreateUser = call fakePerson
+    * def requestCreateUser = callonce fakePerson
     #* def requestCreateUser = {"id": 22, "username": "#(fakerObj.name().firstName())", "firstName": "Claire", "email": "claireredfield@gmail.com", "password": "kekw", "phone": "987-654-321", "userStatus": 0}
     * def responseCreateUser = read('classpath:karate/User/EP1_CreateUser/responseCreateUser.json')
 
