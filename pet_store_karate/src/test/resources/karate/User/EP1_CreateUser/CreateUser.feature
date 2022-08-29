@@ -17,3 +17,4 @@ Feature: Service client Post
     When method post
     Then status 200
     And match response == responseCreateUser
+    And assert response.type == "unknown"
