@@ -8,8 +8,8 @@ Feature: Service client Post
     * url url
 
   Scenario: Check the service POST method
-    * def requestAddPet = read('classpath:karate/EP1_AddPet/AddPetBody.json')
-    * def responseAddPet = read('classpath:karate/EP1_AddPet/responseAddPet.json')
+    * def requestAddPet = read('classpath:karate/Pet/EP1_AddPet/AddPetBody.json')
+    * def responseAddPet = read('classpath:karate/Pet/EP1_AddPet/responseAddPet.json')
 
     Given path 'pet'
     And request requestAddPet
@@ -26,7 +26,7 @@ Feature: Service client Post
     And assert response.status == requestAddPet.status
 
   Scenario Outline: Request with invalid id
-    * def requestAddPet = read('classpath:karate/EP1_AddPet/AddPetBody.json')
+    * def requestAddPet = read('classpath:karate/Pet/EP1_AddPet/AddPetBody.json')
     * set requestAddPet.id = <id>
 
     Given path 'pet'
@@ -44,7 +44,7 @@ Feature: Service client Post
       |"#$%&"|500       |
 
   Scenario Outline: Request with invalid category.id
-    * def requestAddPet = read('classpath:karate/EP1_AddPet/AddPetBody.json')
+    * def requestAddPet = read('classpath:karate/Pet/EP1_AddPet/AddPetBody.json')
     * set requestAddPet.category.id = <categid>
 
     Given path 'pet'

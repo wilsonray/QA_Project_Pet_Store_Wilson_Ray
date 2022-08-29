@@ -8,7 +8,7 @@ Feature: Service client Put
     * url url
 
   Scenario Outline: Request with invalid id
-    * def requestUpdatePet = read('classpath:karate/EP2_UpdatePet/UpdatePetBody.json')
+    * def requestUpdatePet = read('classpath:karate/Pet/EP2_UpdatePet/UpdatePetBody.json')
     * set requestUpdatePet.id = <id>
 
     Given path 'pet'
@@ -26,7 +26,7 @@ Feature: Service client Put
       |"#$%&"|500       |
 
   Scenario Outline: Request with invalid category.id
-    * def requestUpdatePet = read('classpath:karate/EP2_UpdatePet/UpdatePetBody.json')
+    * def requestUpdatePet = read('classpath:karate/Pet/EP2_UpdatePet/UpdatePetBody.json')
     * set requestUpdatePet.category.id = <categid>
 
     Given path 'pet'
@@ -44,8 +44,8 @@ Feature: Service client Put
       |"#$%&" |500       |
 
   Scenario: Check the service PUT method
-    * def requestUpdatePet = read('classpath:karate/EP2_UpdatePet/UpdatePetBody.json')
-    * def responseUpdatePet = read('classpath:karate/EP2_UpdatePet/responseUpdatePet.json')
+    * def requestUpdatePet = read('classpath:karate/Pet/EP2_UpdatePet/UpdatePetBody.json')
+    * def responseUpdatePet = read('classpath:karate/Pet/EP2_UpdatePet/responseUpdatePet.json')
 
     Given path 'pet'
     And request requestUpdatePet

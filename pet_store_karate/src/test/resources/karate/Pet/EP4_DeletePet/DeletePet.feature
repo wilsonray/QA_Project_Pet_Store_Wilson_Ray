@@ -9,7 +9,7 @@ Feature: Service client Delete
 
   Scenario: Check the service DELETE method
     #* def PetBody = read('classpath:karate/AddPet/AddPetBody.json')
-    * def responseDeletePet = read('classpath:karate/EP4_DeletePet/SuccessfulDeleteResponse.json')
+    * def responseDeletePet = read('classpath:karate/Pet/EP4_DeletePet/SuccessfulDeleteResponse.json')
 
     Given path 'pet', '15'
     And header api_key = "special-key"

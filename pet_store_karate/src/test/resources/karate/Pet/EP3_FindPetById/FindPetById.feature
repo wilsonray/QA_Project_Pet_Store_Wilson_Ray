@@ -8,8 +8,8 @@ Feature: Service client Get
     * url url
 
   Scenario: Check the service GET method
-    * def PetBody = read('classpath:karate/EP2_UpdatePet/UpdatePetBody.json')
-    * def responseFindPetById = read('classpath:karate/EP3_FindPetById/responseFindPetById.json')
+    * def PetBody = read('classpath:karate/Pet/EP2_UpdatePet/UpdatePetBody.json')
+    * def responseFindPetById = read('classpath:karate/Pet/EP3_FindPetById/responseFindPetById.json')
 
     Given path 'pet', '15'
     When  method get
@@ -25,7 +25,7 @@ Feature: Service client Get
     And assert response.status == PetBody.status
 
   Scenario Outline: Request with invalid id
-    * def responseFindPetById = read('classpath:karate/EP3_FindPetById/responseFindPetById.json')
+    * def responseFindPetById = read('classpath:karate/Pet/EP3_FindPetById/responseFindPetById.json')
 
     Given path 'pet', <id>
     When method get
